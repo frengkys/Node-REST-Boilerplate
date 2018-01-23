@@ -22,6 +22,7 @@ first clone project
 ```
 git clone https://github.com/frengkys/node_es6_rest_starter.git
 ```
+and then install node js modules with
 
 ```
 npm install
