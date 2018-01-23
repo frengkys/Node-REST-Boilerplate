@@ -8,7 +8,7 @@ import cookieParser from 'cookie-parser'
 require('dotenv').config()
 
 let app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8888;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
