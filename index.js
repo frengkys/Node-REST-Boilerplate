@@ -5,7 +5,7 @@ import router from './src/routes/index';
 import compression from 'compression';
 import cookieParser from 'cookie-parser'
 
-require('dotenv').config()
+import {} from 'dotenv/config'
 
 let app = express();
 const port = process.env.PORT || 8888;
