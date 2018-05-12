@@ -6,14 +6,11 @@ module.exports = (sequelize, DataTypes) => {
     last_name: DataTypes.STRING,
     email: DataTypes.STRING,
     password: DataTypes.STRING,
-    role_id: DataTypes.TINYINT,
-    job_id: DataTypes.CHAR
-  }, {
-    classMethods: {
-      associate: function(models) {
-        // associations can be defined here
-      }
-    }
-  });
+    status: DataTypes.TINYINT,
+    bio: DataTypes.TEXT
+  }, {});
+  User.associate = function(models) {
+    // associations can be defined here
+  };
   return User;
 };

@@ -23,11 +23,11 @@ module.exports = {
       password: {
         type: Sequelize.STRING
       },
-      role_id: {
+      status: {
         type: Sequelize.TINYINT
       },
-      job_id: {
-        type: Sequelize.CHAR
+      bio: {
+        type: Sequelize.TEXT
       },
       createdAt: {
         allowNull: false,
