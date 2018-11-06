@@ -1,5 +1,5 @@
 import express from 'express';
-import user from './user';
+import user from './user.route';
 
 const router = express.Router(); // eslint-disable-line new-cap
 

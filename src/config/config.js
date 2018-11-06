@@ -8,6 +8,12 @@ module.exports = {
       host: process.env.DB_HOSTNAME,
       dialect: 'mysql',
       operatorsAliases: false,
+      secret: process.env.SECRET,
+      define: {
+          //prevent sequelize from pluralizing table names
+          freezeTableName: true,
+          underscored: true,
+      }
     },
     test: {
       username: 'database_test',
