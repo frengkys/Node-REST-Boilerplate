@@ -1,4 +1,4 @@
-import model from '../models/'
+import model from '../models'
 
 /**
  * Get user
@@ -6,20 +6,19 @@ import model from '../models/'
  */
 
 function getAll(req, res) {
-    model.c_user.findAll().then(users => {
-        return res.json(users);
-    })
+  // model.c_user.findAll().then(users => res.json(users))
+  return []
 }
 
-function addUser(req, res){
-    model.c_user.create({ username: 'barfooz', password: '12345' }).then(user => {
-        // let's assume the default of isAdmin is false:
-        console.log(user.get({
-          plain: true
-        })) // => { username: 'barfooz', isAdmin: false }
-      })
+function addUser(req, res) {
+  model.c_user.create({ username: 'barfooz', password: '12345' }).then((user) => {
+    // let's assume the default of isAdmin is false:
+    console.log(user.get({
+      plain: true,
+    })) // => { username: 'barfooz', isAdmin: false }
+  })
 
-    res.send('ok')
+  res.send('ok')
 }
 
-export default {getAll, addUser}
+export default { getAll, addUser }
