@@ -1,5 +1,5 @@
 
-# NODE-BACKBONE
+# NODE-BACKBONE ( Deprecated )
 nodejs boilerplate projects starter for rest application
 
 ## Getting Started
