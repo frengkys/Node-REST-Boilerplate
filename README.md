@@ -1,5 +1,5 @@
 
-# node_es6_rest_starter
+# NODE-BACKBONE
 nodejs boilerplate projects starter for rest application
 
 ## Getting Started
